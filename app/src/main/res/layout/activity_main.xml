@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".MainActivity">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:text="Prerequisite Test- Operating Systems"
+            android:textAlignment="center"
+            android:textColor="@color/colorPrimaryDark"
+            android:textColorHighlight="@color/colorPrimary"
+            android:textSize="25sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:text="Question 1: Dual mode operating system of computer system has operations of how many modes? "
+            android:textColor="@color/colorPrimary"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/answer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="answer"
+            android:imeOptions="actionDone"
+            android:inputType="text" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:text="Question 2: A Process Control Block(PCB) does not contain which of the following :"
+            android:textColor="@color/colorPrimary"
+            android:textSize="20sp" />
+
+        <RadioGroup
+            android:id="@+id/radio_group2"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/radio_code"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onSecondQuestionClicked"
+                android:text="Code"
+                android:textSize="15sp" />
+
+            <RadioButton
+                android:id="@+id/radio_stack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onSecondQuestionClicked"
+                android:text="Stack"
+                android:textSize="15sp" />
+
+            <RadioButton
+                android:id="@+id/radio_bootstrap"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onSecondQuestionClicked"
+                android:text="Bootstrap Program"
+                android:textSize="15sp" />
+
+            <RadioButton
+                android:id="@+id/radio_data"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onSecondQuestionClicked"
+                android:text="Data"
+                android:textSize="15sp" />
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:text="Question 3 : Which of the following is not the state of a process?"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="20sp" />
+
+        <RadioGroup
+            android:id="@+id/radio_group3"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/radio_new"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onThirdQuestionClicked"
+                android:text="New"
+                android:textSize="15sp" />
+
+            <RadioButton
+                android:id="@+id/radio_old"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onThirdQuestionClicked"
+                android:text="Old"
+                android:textSize="15sp" />
+
+            <RadioButton
+                android:id="@+id/radio_waiting"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onThirdQuestionClicked"
+                android:text="Waiting"
+                android:textSize="15sp" />
+
+            <RadioButton
+                android:id="@+id/radio_running"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onThirdQuestionClicked"
+                android:text="Running"
+                android:textSize="15sp" />
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:text="Question 4: Which of the folllowing is/are external commands? :"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="20sp" />
+
+        <CheckBox
+            android:id="@+id/checkbox_edit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onCheckBoxClicked"
+            android:text="Edit"
+            android:textSize="15sp" />
+
+        <CheckBox
+            android:id="@+id/checkbox_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onCheckBoxClicked"
+            android:text="Label"
+            android:textSize="15sp" />
+
+        <CheckBox
+            android:id="@+id/checkbox_sys"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onCheckBoxClicked"
+            android:text="Sys"
+            android:textSize="15sp" />
+
+        <CheckBox
+            android:id="@+id/checkbox_open"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onCheckBoxClicked"
+            android:text="Open"
+            android:textSize="15sp" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="submitScore"
+            android:text="Submit"
+            android:textAlignment="center"
+            android:textSize="15sp" />
+
+        <Button
+            android:id="@+id/reset_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="resetScore"
+            android:text="Reset" />
+
+
+    </LinearLayout>
+
+</ScrollView>
